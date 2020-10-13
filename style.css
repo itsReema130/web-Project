@@ -83,7 +83,7 @@ h1 {
 
 .roll-in-left {
     -webkit-animation: roll-in-left 1s ease-out backwards;
-    animation: roll-in-left 1s ease-out backwards;
+    animation: roll-in-left 2s ease-out backwards;
 }
 
 
@@ -101,28 +101,28 @@ h1 {
  * ----------------------------------------
  */
 
-@-webkit-keyframes roll-in-left {
+@keyframes roll-in-left {
     0% {
-        -webkit-transform: translateX(-800px) rotate(-540deg);
-        transform: translateX(-800px) rotate(-540deg);
+        -webkit-transform: translateX(1000px) rotate(40deg);
+        transform: translateX(1000px) rotate(540deg);
         opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(540deg);
         opacity: 1;
     }
 }
 
 @keyframes roll-in-left {
     0% {
-        -webkit-transform: translateX(-800px) rotate(-540deg);
-        transform: translateX(-800px) rotate(-540deg);
+        -webkit-transform: translateX(1800px) rotate(540deg);
+        transform: translateX(1800px) rotate(540deg);
         opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0) rotate(0deg);
         transform: translateX(0) rotate(0deg);
-        opacity: 1;
+        opacity: 50px;
     }
 }
