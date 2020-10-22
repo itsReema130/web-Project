@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 HTML body {
     padding-top: 30px;
     background-color: #f8f8f0;
@@ -19,11 +25,12 @@ h1 {
 /* cookie */
 
 .cookie {
-    padding-right: 20px;
-    position: relative;
-    width: 24rem;
-    height: 24rem;
-    border: 1rem solid #434342;
+    z-index: -1;
+    margin-left: 2rem;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem solid #434342;
     border-radius: 50%;
     background-color: #e5c89c;
     box-shadow: inset 2rem -2rem rgba(0, 0, 0, 0.15);
@@ -31,19 +38,21 @@ h1 {
 }
 
 .cookie_bite {
+    z-index: -1;
     position: absolute;
     right: -2rem;
-    width: 8rem;
-    height: 8rem;
-    border: 1rem solid #434342;
+    width: 5rem;
+    height: 5rem;
+    border: 0.5rem solid #434342;
     border-radius: 50%;
     background-color: #f8f8f0;
 }
 
 .cookie_dot {
+    z-index: -1;
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #434342;
 }
@@ -59,8 +68,8 @@ h1 {
 }
 
 .cookie_dot:nth-of-type(3) {
-    top: 40%;
-    left: 70%;
+    top: 70%;
+    left: 80%;
 }
 
 .cookie_dot:nth-of-type(4) {
@@ -123,3 +132,17 @@ h1 {
 
 
 /* end of animation */
+
+html body .button1 {
+    margin-left: 2rem;
+    margin-top: 10rem;
+    z-index: 7;
+    align-self: start;
+}
+
+.hh1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'Lemonada', cursive;
+}
